@@ -1,0 +1,168 @@
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-family: sans-serif;
+	background-image: url("bg.png");
+}
+
+.header {
+	background-color: #737373;
+	background-image: -moz-linear-gradient(top,#737373,#666666);
+	background-image: -webkit-linear-gradient(top,#737373,#666666);
+	background-image: -ms-linear-gradient(top,#737373,#666666);
+	color: white;
+}
+
+.header-title {
+	font-size: 26px;
+}
+
+.navbar-item: hover {
+	background-color: #F2F2F2;
+	color: #000000;
+}
+
+.navbar-item-open {
+	background-color: #F2F2F2;
+	color: #000000;
+	cursor: default;
+}
+
+.navbar-link {
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	text-align: center;
+}
+
+.content {
+	background-color: #F2F2F2;
+	padding: 4px;
+	padding-bottom: 10px;
+}
+
+/* Use a multi-row header on smaller displays */
+@media (max-width:500px) {
+	.header-title {
+		width: 100%;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	.header-title-text {
+		text-align: center;
+	}
+
+	.header-navbar {
+		width: 100%;
+	}
+
+	.navbar-item {
+		display: inline-block;
+		padding-left: 5px; padding-right: 5px;
+		border-style: solid; border-color: #0D0D0D; border-width: 1px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	.navbar-item-text {
+		display: table-cell; vertical-align: middle;
+		height: 50px;
+	}
+}
+
+/* Use a single row header on larger displays */
+@media (min-width:501px) {
+	.header {
+		height: 50px;
+	}
+
+	.header-title {
+		float: left;
+	}
+
+	.header-title-text {
+		display: table-cell; vertical-align: middle;
+		height: 50px;
+	}
+	
+	.header-navbar {
+		float: right;
+		border-right-style: solid; border-right-color: #0D0D0D; border-right-width: 1px;
+	}
+
+	.navbar-item {
+		padding-left: 5px; padding-right: 5px;
+		border-left-style: solid; border-left-color: #0D0D0D; border-left-width: 1px;
+		float: left;
+		height: 50px;
+	}
+
+	.navbar-item-text {
+		display: table-cell; vertical-align: middle;
+		height: 50px;
+	}
+}
+
+
+/* Change the content to use the whole wdith on smaller displays */
+@media (max-width: 900px) {
+	.header {
+		padding-left: 5px; padding-right: 19px;
+		border-left-style: none;
+		border-right-style: none;
+		border-bottom-style: solid; border-bottom-color: #0D0D0D; border-bottom-width: 1px;
+		border-radius: 0px 0px 0px 0px;
+	}
+
+	.content {
+		margin-left: 0px;
+		margin-right: 0px;
+		background-color: #F2F2F2;
+		border-left-style: none;
+		border-right-style: none;
+		border-bottom-style: solid; border-bottom-color: #0D0D0D; border-bottom-width: 1px;
+		border-radius: 0px 0px 0px 0px;
+	}
+
+	.main-wrapper {
+		margin: 0px;
+		width: 100%;
+	}
+}
+
+/* Use a maximum width and rounder corners on larger displays */
+@media (min-width: 901px) {
+	.header {
+		padding-left: 5px; padding-right: 19px;
+		border-left-style: solid; border-left-color: #0D0D0D; border-left-width: 1px;
+		border-right-style: solid; border-right-color: #0D0D0D; border-right-width: 1px;
+		border-bottom-style: solid; border-bottom-color: #0D0D0D; border-bottom-width: 1px;
+		border-radius: 0px 0px 5px 5px;
+	}
+
+	.content {
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: #F2F2F2;
+		border-left-style: solid; border-left-color: #0D0D0D; border-left-width: 1px;
+		border-right-style: solid; border-right-color: #0D0D0D; border-right-width: 1px;
+		border-bottom-style: solid; border-bottom-color: #0D0D0D; border-bottom-width: 1px;
+		border-radius: 0px 0px 5px 5px;
+	}
+
+	.main-wrapper {
+		margin: auto;
+		width: 80%;
+		max-width: 1500px;
+	}
+}
+
+/* Prevent YouTube clip going off screen */
+iframe {
+	width: 100%;
+	max-width: 560px;
+	height: 315px;
+}

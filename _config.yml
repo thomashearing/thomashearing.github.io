@@ -1,0 +1,9 @@
+title: Thomas Hearing
+#email: your-email@domain.com
+description: >
+  The personal website of Thomas Hearing. Projects and other things I create/find live here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thomashearing.net" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
